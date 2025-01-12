@@ -41,3 +41,28 @@ We can goto 'https://github.com/yathAg/VSDSquadron_FM_Workshop' and download the
 
 ![image](https://github.com/user-attachments/assets/e9973eb8-1eba-4844-a83e-b4c0eeb5268c)
 
+![image](https://github.com/user-attachments/assets/9e1157e2-e75a-43de-b60b-93e70e7a9660)
+
+Then we will search for Gyroscope(ICM 4267) which is required for our project. This is also not available in the symbols. So, we go to 'snapeda' and search for 'icm 4267' and download and use it as we did for the previous symbol.
+
+![image](https://github.com/user-attachments/assets/943b9578-976f-4a68-9b46-9a32146e2a85)
+
+![image](https://github.com/user-attachments/assets/7c7e5332-792d-46a9-bd40-f3e1bd55ad2f)
+
+For any design, the reference manual is the datasheet of the device so, we will download it from the website 'https://invensense.tdk.com/products/motion-tracking/6-axis/icm-42670-p/'. For schmatic capture, there are two important characteristics, one is the pin description. So, fromm the datasheet, it is observed that there are two communication protocols used I3C and SPI interface. In this workshop, SPI part is focussed.
+
+![image](https://github.com/user-attachments/assets/5ce3321f-1241-4d13-a69e-ee8ecd0cdc68)
+
+By looking into the pin configuration, we do the connections. RESV is reserved and no connection, so we press 'q' and give the cross symbol. When we connect the entire circuits with the wires, it will too crowded. So, to avoid that problem, we are using labels eg: AP_CS.
+
+![image](https://github.com/user-attachments/assets/18038cc5-8f9c-4ead-b8e0-8fcfbb2469a6)
+
+To check whether they are connected using label we can use the highlighter. Which are the pins are highlighted while clicking in a pin, they are connected to each other.
+
+![image](https://github.com/user-attachments/assets/190b4611-9c3b-4fb1-bb60-32ef18b9b723)
+
+Then we have to add Decoupling capacitors as shown in the datasheet to make sure that the circuit works correctly.
+
+![image](https://github.com/user-attachments/assets/6e43779a-74b2-4f79-b33b-ddb246941399)
+
+![image](https://github.com/user-attachments/assets/be40a475-0927-4d3a-a77c-a1a7ad8153a4)
