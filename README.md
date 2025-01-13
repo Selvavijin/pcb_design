@@ -66,3 +66,5 @@ Then we have to add Decoupling capacitors as shown in the datasheet to make sure
 ![image](https://github.com/user-attachments/assets/6e43779a-74b2-4f79-b33b-ddb246941399)
 
 ![image](https://github.com/user-attachments/assets/be40a475-0927-4d3a-a77c-a1a7ad8153a4)
+
+Then we have to give connectins to the 4 pin header. The main thing we have to make sure is the power requirements is met.
