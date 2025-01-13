@@ -67,4 +67,31 @@ Then we have to add Decoupling capacitors as shown in the datasheet to make sure
 
 ![image](https://github.com/user-attachments/assets/be40a475-0927-4d3a-a77c-a1a7ad8153a4)
 
-Then we have to give connectins to the 4 pin header. The main thing we have to make sure is the power requirements is met.
+Then we have to give connectins to the 4 pin header. The main thing we have to make sure is the power requirements is met. The power supply on the VSD Squadron FM does not used to power up the shield. So, we need to use external power supply. The common thing that is used is an LDO which can be found from the website'mouser.com' and search for LDO and apply filters like '1 output' and '-3.3v' output voltage and we will have multiple options. We can search ams1117-3.3 in google and enter into the website 'digikey' and find the datasheet.
+
+![image](https://github.com/user-attachments/assets/f6ffd96d-08a7-4282-ab96-92c90f26b714)
+
+This component is commonly available and we can find it in the symbols itself. The one end is connected to the 5V of the VSD Squadron and the other end is connected to 3.3V and the third end is connected to gnd. Also we connect capacitors by referring into the data sheet.
+
+![image](https://github.com/user-attachments/assets/61b424c8-0590-4684-93b6-4bd099694180)
+
+Then we give title by double clicking in the bottom. Then we partition the circuits using a line. This is the schmetic.
+
+![image](https://github.com/user-attachments/assets/5f1128b5-0d60-447a-9467-250e84350f12)
+
+Then we are going to do ERC rule check. Inspect->Electrical rule checker->run erc.
+
+![image](https://github.com/user-attachments/assets/deade9c5-cdfc-48f9-87e2-b56c58904e02)
+
+Here we can ignore the 2 errors, because we are going to connect the supply directly from VSDSquadron. However, if we need to remove those errors, we can connect the pins to the power flags as shown below.
+
+![image](https://github.com/user-attachments/assets/bca8da25-5412-4688-9c69-0b7987f20aaf)
+
+Then we have to assign footprints. click on assign footprints. Here there is no footprints for the below mentioned devices.
+
+![image](https://github.com/user-attachments/assets/2f9164a3-464a-476e-874f-5b65760b2158)
+
+So, we need to get it by going to the reference document in 'https://github.com/yathAg/VSDSquadron_FM_Workshop'
+
+
+
