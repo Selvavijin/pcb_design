@@ -87,11 +87,26 @@ Here we can ignore the 2 errors, because we are going to connect the supply dire
 
 ![image](https://github.com/user-attachments/assets/bca8da25-5412-4688-9c69-0b7987f20aaf)
 
-Then we have to assign footprints. click on assign footprints. Here there is no footprints for the below mentioned devices.
+Then we have to assign footprints. click on assign footprints. Here there is no footprints assigned for the capacitors. But the footprints are assigned for the next two devices but it can't be found and the last one has footprint in kicad itself.
 
 ![image](https://github.com/user-attachments/assets/2f9164a3-464a-476e-874f-5b65760b2158)
 
-So, we need to get it by going to the reference document in 'https://github.com/yathAg/VSDSquadron_FM_Workshop'
+So, we need to know, how to set footprints for the capacitors by going to the reference document in 'https://github.com/yathAg/VSDSquadron_FM_Workshop'. We select the below footprint for all the capacitors.
 
+![image](https://github.com/user-attachments/assets/d01eeaef-80a5-46ae-a7af-34d9e5da3f18)
+
+To select the footprint for the ICM kit, we need to goto the datasheet and refer. Here, pitch is the interconnect between two pins. Here it is 'e' and is set to 0.5.
+
+![image](https://github.com/user-attachments/assets/981fea82-e6be-4d54-956a-f2eb10186944)
+
+![image](https://github.com/user-attachments/assets/5c6a912e-3ba8-4ed2-ac34-83ef76c26306)
+
+From the below picture, we get that we have to search 'LGA' for the footprint, so we double click the schematic and select the required footprint.
+
+![image](https://github.com/user-attachments/assets/460579a7-20c0-4114-a05c-df61335980c7)
+
+Then we also add the footprint for the VSDSquadron from the local directory and now the footprints are assigned for everything.
+
+![image](https://github.com/user-attachments/assets/0d727253-c34e-48b5-8d3d-f5c400e62a53)
 
 
