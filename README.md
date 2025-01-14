@@ -1,8 +1,22 @@
 # pcb_design
 
-The tunnels or holes are covered by copper.
+The tunnels or holes are covered by copper. There is a core present in the middle and the copper layers cover the core. We focus on 2 layer board. so, we have a core and 2 copper layers.
 
 ![image](https://github.com/user-attachments/assets/7452480f-1d8b-4480-8b77-3c37dc4c845f)
+
+The gray colour represents the core and the two yellow layers represent copper layers. In KiCAD, front copper layer is red in colour and back copper layer is blue in colour.
+
+![image](https://github.com/user-attachments/assets/02e7a43c-e88b-4e99-a0a6-0cb0c54a28ae)
+
+![image](https://github.com/user-attachments/assets/9b140cc9-d577-4ceb-89db-c1d0f71ca554)
+
+Silkscreen is used to add the important informations like adding the names or writing any text.
+
+![image](https://github.com/user-attachments/assets/75a1101f-b6fa-444e-93d9-2c34f6ad543c)
+
+![image](https://github.com/user-attachments/assets/a7ff19bb-b237-4fef-8ef8-f9f2b4e0a1a3)
+
+![image](https://github.com/user-attachments/assets/e2b671ff-21d6-4296-aa4a-c4a67713af05)
 
 LUT means gates. 1 LUT means 1 gate(AND, OR, etc). This has 5K LUTs
 
@@ -108,5 +122,64 @@ From the below picture, we get that we have to search 'LGA' for the footprint, s
 Then we also add the footprint for the VSDSquadron from the local directory and now the footprints are assigned for everything.
 
 ![image](https://github.com/user-attachments/assets/0d727253-c34e-48b5-8d3d-f5c400e62a53)
+
+![image](https://github.com/user-attachments/assets/9e0f2f1e-32fe-4109-9d25-ec1d9f5c246b)
+
+As a designer, we have to make connections with minimum resistance.
+
+![image](https://github.com/user-attachments/assets/f5419905-8a9b-456d-9cd7-c5d1d6f76d4a)
+
+![image](https://github.com/user-attachments/assets/85eca368-d080-4b13-82fa-f4a909661dc8)
+
+![image](https://github.com/user-attachments/assets/98c51d32-da5d-455b-bd00-52ba88912658)
+
+![image](https://github.com/user-attachments/assets/f07e94bb-9dc6-4565-866a-39519f126caf)
+
+![image](https://github.com/user-attachments/assets/f352f65f-e9e8-4e82-8fba-f8b0c6ecdab0)
+
+In KiCAD we are making a small change for the 10 and 22um capacitor in footprint as a bigger size.
+
+![image](https://github.com/user-attachments/assets/6a396416-f8cb-48bf-b14f-70d48cd7b8c1)
+
+Once that is done, we can move to the PCB editor and the below window appears.
+
+![image](https://github.com/user-attachments/assets/44950bc1-948b-4dc5-bd54-e3c39735e793)
+
+To create a new project, goto File->Board setup. The user layers are not required now, so we disabled it.
+
+![image](https://github.com/user-attachments/assets/87b4e175-398f-4d83-9c6f-d9f618755e4e)
+
+Then moving to physical stackup, we are customizing the colours of layers and also we can customize the thickness and material.
+
+![image](https://github.com/user-attachments/assets/27852020-02b4-4674-89c0-7cc4c1329871)
+
+Moving to 'constraints'. If we do more designs, we can use the option 'import settings from another board'. Otherwise, manually we have to set it according to the manufacturer. Now we stick to 'JLCPCB' manufacturer. The detailed document can be found in the reference document. And the capabilities of JLCPCB can be found in 'https://jlcpcb.com/capabilities/pcb-capabilities'.
+
+![image](https://github.com/user-attachments/assets/71903bb1-7ec6-45a8-b990-a9ac41879442)
+
+![image](https://github.com/user-attachments/assets/e20972a7-82cb-4d96-9040-b5ddd5d08dce)
+
+![image](https://github.com/user-attachments/assets/a8dc59a3-1165-4cbe-8498-0ee5408daa1d)
+
+![image](https://github.com/user-attachments/assets/e2669f45-fa4c-4984-bade-a9254f1438a6)
+
+Then we can move to 'pre-defined sizes'
+
+![image](https://github.com/user-attachments/assets/4b9ccd20-0930-4533-b394-edfd4b2f97bc)
+
+Now the entire setup is complete. 
+Now we select the 50 mils.
+
+![image](https://github.com/user-attachments/assets/8068762c-d6da-43bb-947b-503a27ebd7d9)
+
+The three sets of capacitors that are together are called de-coupling capacitors and should be placed as close to the power pins as shown in the schematic.
+
+![image](https://github.com/user-attachments/assets/4f29bffa-bc0e-4a0e-b7c4-901fa0780093)
+
+Then we organize the silkscreen. Then we draw the board boundary. So, we select the edgecuts layer and draw boundary.
+
+![image](https://github.com/user-attachments/assets/7bf1ad4f-4bed-45c9-b3f1-f61d240137d2)
+
+
 
 
