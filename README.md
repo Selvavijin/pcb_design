@@ -180,6 +180,76 @@ Then we organize the silkscreen. Then we draw the board boundary. So, we select 
 
 ![image](https://github.com/user-attachments/assets/7bf1ad4f-4bed-45c9-b3f1-f61d240137d2)
 
+Then we are going to make the copper zones. There are two layers top and bottom. On bottom, we are going to add a gnd zone.
 
+![image](https://github.com/user-attachments/assets/4c1dd7c0-070f-4f2f-a9c8-932e4e2e3c0e)
 
+![image](https://github.com/user-attachments/assets/1ff83922-751f-427f-84ff-20443fe6977f)
 
+If we see down, we can see 25 unrouted nets and if we press 'b', it fills out the copper zone as shown below.
+
+![image](https://github.com/user-attachments/assets/ec7d7880-5e96-4bed-aeaf-774648dac6aa)
+
+Now, all the gnd are connected on the bottom layer and are remaining in the top layer. On the front layer, we are going to give 3.3v zone as we given for the gnd.
+
+![image](https://github.com/user-attachments/assets/81fbb072-597e-478d-9f7a-089273e4b4fa)
+
+When we press 'b' again, all the 3.3v are connected.
+
+![image](https://github.com/user-attachments/assets/9e7176f1-8e8e-4eaf-9ead-682b149395e7)
+
+But, it is missed in some places as shown below because of the minimum width and the clearance that we selected.
+
+![image](https://github.com/user-attachments/assets/a8b0ffaf-5941-4b40-979d-4641980371d2)
+
+If we reduce the clearance value, it will affect the circuit. So we are going to give connection using wires. 
+
+![image](https://github.com/user-attachments/assets/6aafc1f6-778e-43eb-b7a8-8dd0a2c35a4b)
+
+While we give connections, we face difficulty in routing as shown above. So, will change the pins in the schematic as shown below.
+
+![image](https://github.com/user-attachments/assets/48ae6c45-bdae-4302-a908-2a863bd7a8f7)
+
+![image](https://github.com/user-attachments/assets/7c4f9e15-a677-4799-807d-bf5c381c3442)
+
+We can click 'v' for a via and use it.
+
+![image](https://github.com/user-attachments/assets/d7861557-7e42-49b8-b7b3-697fae772841)
+
+Then we do connect gnd signals by using the via.
+
+![image](https://github.com/user-attachments/assets/5de3fa9e-7f59-4c1a-9f49-f0f55a02eb6e)
+
+Then we do connect 5V signal using 20 mil trace.
+
+![image](https://github.com/user-attachments/assets/952804f3-7169-41ff-b4e9-51a8b4c0a5d6)
+
+In pin number 8 and 5, the connection is not done due to clearance. So we connect it with a place trace as shown below.
+
+![image](https://github.com/user-attachments/assets/5794f4b4-416b-448e-8763-e335427df4e9)
+
+Once these things are done, we click 'b' again.
+
+![image](https://github.com/user-attachments/assets/97707291-5296-43f8-8fd3-d39815ca26ec)
+
+Then we go to the 3d viewer and get an idea on how the PCB looks like.
+
+![image](https://github.com/user-attachments/assets/f55bbc92-c742-40d8-9505-7826985e92d7)
+
+![image](https://github.com/user-attachments/assets/93570122-864a-4ceb-b692-11f6039300a7)
+
+There are more empty space and we can go to the silkscreen layer to add any texts. 
+
+![image](https://github.com/user-attachments/assets/70a1f05e-e4a8-4445-afe3-9064d1f445e2)
+
+We can add the texts in a fancier manner by clicking on the plugin and content manager->Kibuzzard on the home screen. 
+
+![image](https://github.com/user-attachments/assets/23504def-97b0-4be4-b57d-f3fb31dc5af2)
+
+Once that is done, we can go to preferences->action plugin.
+
+![image](https://github.com/user-attachments/assets/70ce049a-a1a9-4844-9dca-33838df81724)
+
+The next step is to run the DRC checker and we can exclude the error that are obtained. Because, we have checked them already.
+
+![image](https://github.com/user-attachments/assets/02cf98b9-f37a-4f00-abd7-c4481344ff6c)
