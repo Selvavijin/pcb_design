@@ -253,3 +253,35 @@ Once that is done, we can go to preferences->action plugin.
 The next step is to run the DRC checker and we can exclude the error that are obtained. Because, we have checked them already.
 
 ![image](https://github.com/user-attachments/assets/02cf98b9-f37a-4f00-abd7-c4481344ff6c)
+
+Now let us move to generate the gerber files. For that we can either go to the 'plot' option and generate according to the fabrication house else we goto the plugins and content manager and search for 'jlcpcb'.
+
+![image](https://github.com/user-attachments/assets/aaeb26b9-8943-4cfa-8270-ea1808d46cb6)
+
+![image](https://github.com/user-attachments/assets/95abd2e3-a737-4101-bf3c-4673a88af1f4)
+
+![image](https://github.com/user-attachments/assets/e6c9f391-959f-424a-bb80-8269631c141b)
+
+![image](https://github.com/user-attachments/assets/3d6d4a41-581a-4b9d-bf5c-82db718768e6)
+
+We have to add something called 'lcsc' for the JLCPCB so to do that we goto the schematic and go to bulk edit and add the field LCSC. So that this will be added in the bom and used by the fabrication house.
+
+![image](https://github.com/user-attachments/assets/fc2cc4ec-69ac-4055-98df-ff38e706fc63)
+
+![image](https://github.com/user-attachments/assets/7c32526d-1850-4eac-bae5-c151ea845c12)
+
+Then we do the same for 'ICM-42670-P'.
+
+![image](https://github.com/user-attachments/assets/e3914ee0-1c90-4ccf-b83d-d4ff4f87bf70)
+
+Similarly we need to do for 'AMS1117-3.3' and other capacitors.
+
+![image](https://github.com/user-attachments/assets/632b8096-5ba4-4e70-9227-b8e3a63f202b)
+
+![image](https://github.com/user-attachments/assets/886d6471-848a-4ca9-b3b2-7a0d23cfa3fb)
+
+Then we update PCB and again generate the gerber files.
+
+![image](https://github.com/user-attachments/assets/39ac8fb2-2371-4263-9718-b171ab8d24b8)
+
+![image](https://github.com/user-attachments/assets/f17df934-e314-4ab4-8b68-1ae98ca3ef06)
